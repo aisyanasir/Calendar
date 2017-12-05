@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFCC"
+    tools:context="com.example.user.calendar.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="CALENDAR"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#581845"
+        android:backgroundTintMode="add"
+        android:fontFamily="casual"
+        android:text="Period starts"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/calendarView"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#581845"
+        android:backgroundTintMode="add"
+        android:fontFamily="casual"
+        android:text="Period  ends"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/calendarView"
+        android:layout_toEndOf="@+id/textView3" />
+
+</RelativeLayout>
